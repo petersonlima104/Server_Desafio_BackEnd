@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DesafioBackEnd_Server": {
+    "crud-dio-angular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/desafio-back-end-server",
+            "outputPath": "dist/crud-dio-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "DesafioBackEnd_Server:build:production"
+              "browserTarget": "crud-dio-angular:build:production"
             },
             "development": {
-              "browserTarget": "DesafioBackEnd_Server:build:development"
+              "browserTarget": "crud-dio-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DesafioBackEnd_Server:build"
+            "browserTarget": "crud-dio-angular:build"
           }
         },
         "test": {
@@ -101,7 +105,8 @@
       }
     }
   },
+  "defaultProject": "crud-dio-angular",
   "cli": {
-    "analytics": "7ef33aa3-d1f3-4539-920e-f5115676ec84"
+    "analytics": false
   }
 }

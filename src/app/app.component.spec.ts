@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'DesafioBackEnd_Server'`, () => {
+  it(`should have as title 'crud-dio-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('DesafioBackEnd_Server');
+    expect(app.title).toEqual('crud-dio-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('DesafioBackEnd_Server app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('crud-dio-angular app is running!');
   });
 });

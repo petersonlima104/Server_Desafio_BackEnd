@@ -1,0 +1,41 @@
+<div class="card w-100 my-5">
+  <div class="card-body">
+    <h1 class="card-title text-center">Formulário de Produtos</h1>
+    <form [formGroup]="userForm">
+      <div class="row my-4">
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="codigo" id="codigo" placeholder="Digite o codigo do produto">
+            <label for="codigo">Codigo</label>
+          </div>
+        </div>  
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="descricao" id="descricao" placeholder="Digite a descrição do produto">
+            <label for="descricao">Descrição</label>
+          </div>
+        </div>
+        </div>
+        <div class="row my-4">
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="preco" id="preco" placeholder="Digite o preço">
+            <label for="endereco">Preço</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" formControlName="data" id="data" placeholder="Digite a data do cadastro">
+            <label for="data">Data_Cadastro</label>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="form-group col-12 mt-4">
+          <button type="button" class="btn btn-outline-danger float-start" (click)="cancelar()">Cancelar</button>
+          <button type="button" class="btn btn-outline-success float-end" (click)="actionButton()">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
