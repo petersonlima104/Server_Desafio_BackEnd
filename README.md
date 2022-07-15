@@ -1,5 +1,6 @@
 ## instalações necessarias para rodar a aplicação
 ### npm install -g @angular/cli
+### npm i bootstrap
 ### npm install angular-material
 
 ## Para Rodar a Aplicação - CRUD.
